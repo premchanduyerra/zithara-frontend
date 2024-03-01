@@ -1,11 +1,9 @@
-// frontend/src/components/CustomerTable.js
 import React, { useState, useEffect } from 'react';
 import DataTable from 'react-data-table-component';
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://zithara-backend.vercel.app/api', // Replace with your base API URL
- // baseURL: 'http://localhost:5000/api', // Replace with your base API URL
+  baseURL: 'http://localhost:5000/api', // Replace with your base API URL
 });
 
 function CustomerTable() {
